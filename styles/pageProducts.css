@@ -1,0 +1,86 @@
+.content-section h1 {
+    align-self: center;
+    justify-self: center;
+    margin-top: 40px;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+.product-list {
+    align-self: center;
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    min-height: 200px;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.product-list .product {
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.product-list .product img {
+    height: 200px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.product-list .product img:hover {
+    animation-name: sizeUp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+
+    height: 400px;
+    width: 250px;
+}
+
+@keyframes sizeUp {
+    from {
+        height: 200px;
+        width: 150px;
+    }
+    to {
+        height: 400px;
+        width: 250px;
+    }
+}
+
+.product-list .product div {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list .product div h2 {
+    text-decoration: underline;
+    margin-bottom: 2px;
+}
+
+.product-list .product div p {
+    margin-top: 5px;
+    padding-top: 5px;
+    max-width: 450px;
+
+    font-size: 16px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 950px)
+{
+    .product-list {
+        width: 90%;
+    }
+}

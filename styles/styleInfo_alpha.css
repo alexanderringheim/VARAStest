@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    position: relative;
+    top: 180px;
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 20px;
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content-section {
+    width: 100%;
+    min-height: 200px;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    border-radius: 1px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.gray-area {
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 1px;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.triple-block-info {
+    align-self: center;
+    justify-self: center;
+
+    width: 100%;
+    min-height: 200px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.triple-block-info article {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    border-radius: 2px;
+    padding: 10px;
+    padding-top: 15px;
+    margin: 10px;
+    margin-bottom: auto;
+    max-width: 350px;
+}
+
+.triple-block-info article h3 {
+    align-self: center;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.triple-block-info article p {
+    color: rgb(253, 225, 101);
+    margin-top: 5px;
+}
+
+.yellow {
+    color: rgb(253, 222, 83);
+}
+
+@media screen and (max-width: 1100px)
+{
+    main {
+        width: 100%;
+    }
+
+    .content-section, .gray-area {
+        padding: 8px;
+        border-radius: 1px;
+    }
+
+    @media screen and (max-width: 1000px) 
+    {
+        .triple-block-info {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: 700px)
+        {
+            .triple-block-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

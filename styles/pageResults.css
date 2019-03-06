@@ -1,0 +1,14 @@
+.content-section h1 {
+    align-self: center;
+    justify-self: center;
+    font-size: 36px;
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+.content-section p {
+    align-self: center;
+    justify-self: center;
+    width: 60%;
+    margin-bottom: 40px;
+}

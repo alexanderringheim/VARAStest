@@ -1,0 +1,25 @@
+body {
+    background-image: url('../images/understell_brun.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.separator {
+    border-top: 1px solid #f0e291;
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.separator-black {
+    border-top: 2px solid rgb(17, 17, 17);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    align-self: center;
+    justify-self: center;
+}

@@ -1,0 +1,361 @@
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    min-height: 130px;
+    width: 100%;
+    background-color: #141414;
+    z-index: 2;
+}
+
+.header_container {
+    padding: 10px;
+}
+
+.scroll-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.scroll-top .logo-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.scroll-top .logo-section #title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.scroll-top .logo-section h1, .logo-section i {
+    color: #f0e291;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 30px; 
+    margin: 15px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.scroll-top .logo-section i {
+    align-self: left;
+    font-size: 18px;
+    margin-top: 2px;
+    text-decoration: underline;
+}
+
+.scroll-top .logo-section img {
+    width: 140px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #fdf1af;
+}
+
+
+.scroll-top .nav-section {
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+    margin: 10px;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+
+.scroll-top .nav-section .main-link {
+    padding: 16px;
+    padding-bottom: 2px;
+    margin-left: 3px;
+    margin-right: 3px;
+    color: #f0e291;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.scroll-top .nav-section .main-link:hover {
+    text-decoration: underline;
+    background-color: #353535;
+}
+
+.scroll-top .hidden-section-entry {
+    margin-left: auto;
+    padding: 5px;
+    display: none;
+    position: fixed;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.scroll-top #hidden-entry-top-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    margin-top: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+.scroll-top .hidden-section a {
+    color: #f0e291;
+    background-color: #242424;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 3;
+
+    display: none;
+}
+
+.scroll-top .hidden-section a:hover {
+    text-decoration: underline;
+    background-color: #353535;
+}
+
+.scroll-top .hidden-section {
+    position: relative;
+    margin-top: 100px;
+    right: -15px;
+}
+
+@media screen and (max-width: 1340px)
+{
+    .scroll-top .nav-section .main-link {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 1300px) 
+    {
+        .scroll-top .nav-section #treatments-link {
+            display: none;
+        }
+        .scroll-top .nav-section #results-link {
+            margin-right: 80px;
+        }
+        .scroll-top #hidden-entry-top-img {
+            display: block;
+        }
+        @media screen and (max-width: 1270px)
+        {
+            .scroll-top .nav-section #results-link {
+                display: none;
+            }
+            .scroll-top .nav-section #contact-link {
+                margin-right: 80px;
+            }
+            @media screen and (max-width: 1250px)
+            {
+                .scroll-top .nav-section #contact-link {
+                    display: none;
+                }
+                .scroll-top .nav-section #corrolan-link {
+                    margin-right: 80px;
+                }
+                @media screen and (max-width: 1190px)
+                {
+                    .scroll-top .nav-section #corrolan-link {
+                        display: none;
+                    }
+                    .scroll-top .nav-section #products-link {
+                        margin-right: 80px;
+                    }
+                    @media screen and (max-width: 1070px) {
+                        .scroll-top .nav-section #products-link {
+                            display: none;
+                        }
+                        .scroll-top .nav-section #frontpage-link {
+                            margin-right: 80px;
+                        }
+                        @media screen and (max-width: 1000px)
+                        {
+                            .scroll-top .nav-section #frontpage-link {
+                                display: none;
+                            }
+                        }
+                        @media screen and (max-width: 600px)
+                        {
+                            .scroll-top .logo-section img {
+                                width: 100px;
+                                height: 70px;
+                                margin-top: 20px;
+                            }
+                            .scroll-top .logo-section h1 {
+                                font-size: 26px;
+                            }
+                            .scroll-top #hidden-entry-top-img {
+                                margin-right: 20px;
+                                margin-top: 35px;
+                            }
+                            @media screen and (max-width: 500px)
+                            {
+                                .scroll-top .logo-section img {
+                                    width: 80px;
+                                    height: 60px;
+                                    margin-top: 25px;
+                                }
+                                .scroll-top .logo-section h1 {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.scroll-down {
+    display: none;
+    flex-direction: row;
+}
+
+.scroll-down .logo-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.scroll-down .logo-section img {
+    margin: 5px;
+    margin-top: 8px;
+    margin-right: 15px;
+    padding: 3px;
+    height: 60px;
+    width: 85px;
+    border-radius: 50%;
+    background-color: #fdf1af;
+}
+
+.scroll-down .logo-section .title {
+    color: #f0e291;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 150;
+}
+
+.scroll-down .logo-section .title h1 {
+    font-size: 18px;
+    margin-top: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.scroll-down .logo-section .title i {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.scroll-down .logo-section .title .separator {
+    margin-top: 0px;
+}
+
+
+.scroll-down .nav-section {
+    margin-left: auto;
+    margin-top: 33px;
+    margin-right: 20px;
+}
+
+.scroll-down .nav-section .main-link {
+    text-decoration: none;
+    color: #f0e291;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 150;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.scroll-down .nav-section .main-link:hover {
+    text-decoration: underline;
+    background-color: #353535;
+}
+
+.scroll-down #hidden-entry-down-img {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+
+    display: none;
+}
+
+.scroll-down .hidden-section-entry {
+    position: absolute;
+    right: 0%;
+    top: 83px;
+}
+
+.scroll-down .hidden-section {
+    position: relative;
+}
+
+.scroll-down .hidden-link-down {
+    display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #f0e291;
+    padding: 15px;
+    background-color: #1f1e1e;
+}
+
+.scroll-down .hidden-link-down:hover {
+    text-decoration: underline;
+    background-color: #353535;
+}
+
+@media screen and (max-width: 1100px)
+{
+    .scroll-down #hidden-entry-down-img {
+        display: block;
+    }
+    .scroll-down #treatments-link-down {
+        display: none;
+    }
+
+    @media screen and (max-width: 1050px)
+    {
+        .scroll-down #results-link-down {
+            display: none;
+        }
+
+        @media screen and (max-width: 1000px)
+        {
+            .scroll-down #contact-link-down {
+                display: none;
+            }
+
+            @media screen and (max-width: 950px)
+            {
+                .scroll-down #corrolan-link-down {
+                    display: none;
+                }
+
+                @media screen and (max-width: 900px)
+                {
+                    .scroll-down #products-link-down {
+                        display: none;
+                    }
+
+                    @media screen and (max-width: 850px) {
+                        .scroll-down #frontpage-link-down {
+                            display: none;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
