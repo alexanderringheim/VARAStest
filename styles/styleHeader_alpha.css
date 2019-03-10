@@ -197,6 +197,7 @@ header {
                             }
                             .scroll-top .logo-section #title {
                                 margin-top: 0px;
+                                margin-left: 5px;
                             }
 
                             @media screen and (max-width: 500px)
