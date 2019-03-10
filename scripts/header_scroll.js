@@ -22,7 +22,6 @@ function topHeader()
     scrollDown[0].style.display = "none";
     scrollTop[0].style.display = "flex";
     var headr = document.getElementsByTagName('header');
-    headr[0].style.minHeight = "130px";
 }
 
 function downHeader() 
@@ -30,5 +29,4 @@ function downHeader()
     scrollDown[0].style.display = "flex";
     scrollTop[0].style.display = "none";
     var headr = document.getElementsByTagName('header');
-    headr[0].style.minHeight = "80px";
 }
