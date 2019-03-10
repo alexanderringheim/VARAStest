@@ -122,3 +122,16 @@ p {
         }
     }
 }
+
+.background-icon {
+    position: fixed;
+    top: 250px;
+
+    padding: 20px;
+    border: 2px solid gray;
+    color: gray;
+    background-color: #000000b4;
+    width: autp;
+    align-self: center;
+    font-size: 30px;
+}
