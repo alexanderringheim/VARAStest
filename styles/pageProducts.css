@@ -83,4 +83,7 @@
     .product-list {
         width: 90%;
     }
+    .product-list .product {
+        flex-direction: column;
+    }
 }
