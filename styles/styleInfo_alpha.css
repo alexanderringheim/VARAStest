@@ -135,3 +135,9 @@ p {
     align-self: center;
     font-size: 30px;
 }
+
+@media screen and (max-height: 450px) {
+    .background-icon {
+        top: 150px;
+    }
+}
